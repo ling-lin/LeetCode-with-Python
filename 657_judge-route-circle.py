@@ -1,0 +1,12 @@
+# -*- coding:utf-8 -*-
+
+class Solution(object):
+    def judgeCircle(self, moves):
+        """
+        :type moves: str
+        :rtype: bool
+        """
+        return moves.count('R') == moves.count('L') and moves.count('U') == moves.count('D')
+
+obj = Solution()
+obj.judgeCircle('UD')
